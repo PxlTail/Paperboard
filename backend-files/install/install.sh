@@ -1,6 +1,6 @@
 clear
 echo "Installing JavaScript... (Bun)"
-curl -fsSL https://bun.sh/install | bash >/dev/null 2>&1
+curl -fsSL https://bun.sh/install | bash
 
 # Reload shell profile so bun is in PATH immediately
 if [ -n "$BASH_VERSION" ]; then
