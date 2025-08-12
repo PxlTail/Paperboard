@@ -1,4 +1,9 @@
 clear
+if ! command -v unzip >/dev/null 2>&1; then
+    echo "Installing unzip..."
+    sudo apt-get update -y >/dev/null 2>&1
+    sudo apt-get install -y unzip >/dev/null 2>&1
+fi
 echo "Installing JavaScript... (Bun)"
 curl -fsSL https://bun.sh/install | bash
 
